@@ -1,0 +1,80 @@
+
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+   
+
+}
+
+$widht: 50px;
+$height:50px;
+$logo: 250px;
+$color-titulo:black;
+$radius:90%;
+
+
+
+
+
+
+
+
+.div__imagen-logo{
+    background-color: rgba(56, 15, 15, 0.842);
+    
+
+   .imglogo{
+    height: $logo;
+    width: $logo;
+    border-radius: $radius;
+    padding: 20px;
+   }
+    
+}
+
+.div__titulo-rja{
+    background-color: rgba(56, 15, 15, 0.842);
+    font-weight: 600;
+    color: $color-titulo;
+
+}
+.descripcion{
+    
+    color: $color-titulo;
+}
+
+.mision-vision{
+    background-color: rgba(56, 15, 15, 0.842);
+}
+
+$red-social:(
+    instagram: pink,
+    facebook: blue,
+    whatsapp: green,
+
+);
+@each $nombre ,$valor in $red-social{
+   .icon-#{$nombre}{
+       background-color: $valor;
+        height: 50px;
+        width: 50px;
+        border-radius: 90%;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
